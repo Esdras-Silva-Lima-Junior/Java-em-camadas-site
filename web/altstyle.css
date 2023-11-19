@@ -1,0 +1,40 @@
+*{
+    margin: 0 auto;
+    padding: 10px;
+    color: black;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.cima,
+.meio{
+    display: flex
+}
+
+.cima-dir,
+.cima-esq{
+    flex: 1
+}
+
+.meio-dir,
+.meio-esq{
+    flex: 1
+}
+
+.baixo,
+.title{
+    text-align: center
+}
+
+.baixo input{
+    margin-top: 50px;
+    cursor: pointer
+}
+
+.title{
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+}

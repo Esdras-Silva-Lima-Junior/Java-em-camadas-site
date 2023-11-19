@@ -1,0 +1,52 @@
+*{
+    color: black;
+    font-family: 'Roboto', sans-serif;
+}
+
+div.history{
+    text-align: justify;
+}
+
+div.history,
+div.imgs{
+    width: 90%;
+    margin: 0 auto;
+
+}
+
+div.block-img{
+}
+
+div.imgs{
+    width: 100%;
+    text-align: center;
+
+}
+
+.block-content:hover{
+    opacity: 0.5;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+a img{
+    height: 270px;
+    border: solid rgba(0, 0, 0, 0.7) 1px;
+    width: 370px;
+}
+
+.block-content{
+    border: solid rgba(0, 0, 0, 0.7) 1px;
+    display: inline-block;
+    margin: 30px;
+    box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.5);
+    background-color: gray;
+    flex: 1;
+}
+
+div.history h1{
+    text-align: center;
+}

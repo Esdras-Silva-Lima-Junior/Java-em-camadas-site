@@ -1,0 +1,108 @@
+*{
+    margin: 0 auto;
+    text-decoration: none;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav,
+header,
+footer{
+    width: 100%;
+    text-align: center;
+    border-bottom: solid black 1px;
+}
+
+nav{
+    box-sizing: border-box;
+    background-color: darkgray;
+}
+
+main{
+    padding: 0px 10px;
+    width: 90%;
+    box-shadow: 0px 30px 20px 5px rgba(0,0,0,0.7);
+    text-align: center;
+    height: 481px;
+    background-color: darkgray;
+}
+
+body{
+    background-color: darkgray;
+}
+
+footer{
+    align-items: center;
+    text-align: left;
+    justify-content: center;
+    height: 59px;
+    display: flex;
+    border-top: solid black 1px;
+    background-color: gray;
+}
+
+header h1{
+    text-align: center;
+    padding: 18.5px;
+}
+
+header{
+    background-color: gray;
+}
+
+footer p{
+    flex: 1;
+    margin-top: 0px;
+    padding: 12px
+}
+
+div.submenu a{
+    display: block; /* Mostra os links um embaixo do outro */
+    padding: 5px 15px;
+}
+
+div.submenu a:hover{
+    background-color: gray;
+}
+
+div.submenu{
+    display: none; /* Oculta o conteudo*/
+    position: absolute;
+    box-shadow: 0px 5px 5px 2px rgba(0,0,0,0.5);
+}
+
+button.botao{
+    padding: 15px 15px;
+    cursor: pointer;
+    border: none;
+}
+
+div.menu:hover button.botao{
+    background-color: gray;
+}
+
+div.menu:hover div.submenu{
+    display: block; /* Exibe o conteudo da div anterior */
+}
+
+button.botao,
+div.submenu{
+    background-color: darkgray;
+    font-size: 15px;
+    min-width: 125px;
+    text-align: center;
+}
+
+div.menu {
+    display: inline-block;
+}
+
+main iframe{
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+footer p{
+    text-align: center
+}

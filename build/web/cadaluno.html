@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Cadastro</title>
+        <meta charset="ISO-8859-1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="cadstyle.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <main>
+            <h1>CADASTRO</h1>
+
+            <p class="descr">Abaixo cadastre-se em um curso inserindo o seu nome, cpf, telefone, email e selecione o curso.</p>
+            <form method="post" action="ControleAlunos?flag=cadastro_alunos">
+                <div class="cad">
+                    <div class="cad-left">
+                        <div class='form-left'>
+                            <label for="nomecur"><strong>Escolha um curso:</strong></label>
+                            <div class="input">
+                                <select id="nomecur" name="nomecur" required>
+                                    <option value="CC"><strong>Ciências da Computação</strong></option>
+                                    <option value="TADS"><strong>Análise e Desenvolvimento de Sistemas</strong></option>
+                                    <option value="SI"><strong>Sistemas da Informação</strong></option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-left">
+                            <label for="nom"><strong>Nome:</strong></label>
+                            <div class="input">
+                                <input id="nom" type="text" name="nome" size="50" maxlength="50" required>
+                            </div>
+                        </div>
+
+                        <div class="form-left">
+                            <label for="cpf"><strong>CPF:</strong></label>
+                            <div class="input">
+                                <input id="cpf" type="text" name="cpf_aluno" size="50" maxlength="11" required>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="cad-right">
+                        <div class="form-left">
+                            <label for="email"><strong>E-mail:</strong></label>
+                            <div class="input">
+                                <input id="email" type="email" name="emailaluno" size="50" maxlength="50" required>
+                            </div>
+                        </div>
+
+                        <div class="form-right">
+                            <label for="tel"><strong>Telefone:</strong></label>
+                            <div class="input">
+                                <input id="tel" type="tel" name="telaluno" size="20" placeholder="012 34567 8910" pattern="[0-9]{3} [0-9]{5} [0-9]{4}" maxlength="20">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <p>
+                    <input id="salvar" type="submit" value="Cadastrar">
+                </p>
+            
+            </form>
+            
+        </main>
+    </body>
+</html>
+
+
+
+
+
+

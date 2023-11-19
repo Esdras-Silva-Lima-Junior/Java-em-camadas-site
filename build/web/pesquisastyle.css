@@ -1,0 +1,31 @@
+*{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+table{
+    margin: 50px auto;
+    text-align: center;
+    width: 80%;
+    border-collapse: collapse;
+}
+
+th,
+td{
+    border: 1px solid black;
+    background-color: gray;
+}
+
+table, th, td{
+    padding: 10px
+}
+
+table th{
+    border: 1px solid black;
+    background-color: darkgray;
+}
+
+table tr{
+    background: darkgray;
+    color: black;
+}

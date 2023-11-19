@@ -1,0 +1,55 @@
+* {
+    padding: 5px;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+h1{
+    margin: -5px;
+}
+
+main input#salvar{
+    padding: 10px 25px;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+div.input {
+    margin: 0 auto;
+    max-width: 440px;
+    margin-bottom: -10px;
+}
+
+.cad-left{
+    margin-right: 0;
+    border-right: solid rgba(0, 0, 0, 0.3) 1px;
+}
+
+.cad-left,
+.cad-right{
+    border-top: solid rgba(0, 0, 0, 0.3) 1px;
+    flex: 1;
+}
+
+input{
+    text-align: left
+}
+
+p{
+    margin-top: 0;
+    text-align: center;
+}
+
+div.cad{
+    display: flex;
+}
+
+label,
+div.input{
+    display: block;
+}
+
+div#curso{
+   width: 100%
+}
