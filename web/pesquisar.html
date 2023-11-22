@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Pagina de Consulta</title>
+        <style>
+            *{
+                text-align: center;
+                font-family: 'Roboto', sans-serif;
+                padding: 5px;
+            }
+            
+            label{
+                font-size: 20px
+            }
+            
+            label,
+            input,
+            div.inputNome{
+                text-align: center;
+            }
+            
+            #nom{
+                text-align: left;
+            }
+            
+            input.botao{
+                padding: 10px 25px;
+                box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <form method="post" action="ControleAlunos?flag=consultar">
+            
+            <label for="nom">Ensira o nome do aluno abaixo:</label>
+            <div class="inputNome">
+                <input id="nom" type="text" name="nome" size="50" maxlength="50" required>
+            </div>
+            
+            <input type="submit" value="Consultar" class="botao">
+        </form>
+    </body>
+</html>
