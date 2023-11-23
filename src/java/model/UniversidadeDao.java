@@ -14,13 +14,13 @@ public class UniversidadeDao {
         manager = Persistence.createEntityManagerFactory("PROJETO-JAVA-EM-CAMADASPU").createEntityManager();
     }
 
-    public int salvarAluno(Aluno aluno) {
+    public int salvarFuncionario(Funcionario funcionario) {
         connect();
 
         try {
 
             manager.getTransaction().begin();
-            manager.persist(aluno);
+            manager.persist(funcionario);
             manager.getTransaction().commit();
             return 1;
 
@@ -31,9 +31,9 @@ public class UniversidadeDao {
         }
     }
 
-    public List<Aluno> consultarAluno(String nome) {
+    public List<Funcionario> consultarFuncionario(String nome) {
         connect();
-        TypedQuery<Aluno> query = manager.createNamedQuery("Aluno.findByPartialNome", Aluno.class);
+        TypedQuery<Funcionario> query = manager.createNamedQuery("Funcionario.findByPartialNome", Funcionario.class);
         query.setParameter("partialNome", "%" + nome + "%");
         
         return query.getResultList();
@@ -42,12 +42,12 @@ public class UniversidadeDao {
     public int verificarCpf(String cpf) {
     connect();
 
-    TypedQuery<Aluno> query = manager.createNamedQuery("Aluno.findByCpf", Aluno.class);
+    TypedQuery<Funcionario> query = manager.createNamedQuery("Funcionario.findByCpf", Funcionario.class);
     query.setParameter("cpf", cpf);
 
     try {
         
-        Aluno aluno = query.getSingleResult();
+        Funcionario funcionario = query.getSingleResult();
         return 1;
     } catch (NoResultException e) {
         
@@ -56,17 +56,17 @@ public class UniversidadeDao {
 }
 
 
-    public int excluirAluno(Integer ra) {
+    public int excluirFuncionario(Integer matricula) {
         connect();
 
-        TypedQuery<Aluno> query = manager.createQuery("SELECT a FROM Aluno a WHERE a.ra = :ra", Aluno.class);
-        query.setParameter("ra", ra);
+        TypedQuery<Funcionario> query = manager.createQuery("SELECT f FROM Funcionario f WHERE f.matricula = :matricula", Funcionario.class);
+        query.setParameter("matricula", matricula);
 
-        Aluno aluno = query.getSingleResult();
+        Funcionario funcionario = query.getSingleResult();
 
         try {
             manager.getTransaction().begin();
-            manager.remove(aluno);
+            manager.remove(funcionario);
             manager.getTransaction().commit();
             return 1;
         } catch (Exception erro) {
